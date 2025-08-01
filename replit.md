@@ -1,6 +1,10 @@
 # Overview
 
-This is a full-stack web application built with React (frontend) and Express.js (backend), featuring a modern UI component library and PostgreSQL database integration. The project appears to be a landing page with beta signup functionality, showcasing a product or service to potential users. The application uses TypeScript throughout and follows a monorepo structure with shared schemas between client and server.
+This is a startup landing page application with two deployment options:
+1. **Full-stack version** (Replit deployment) - React frontend with Express.js backend and PostgreSQL database
+2. **Static version** (GitHub Pages deployment) - React-only frontend using external form services
+
+The project features a dark theme with blue primary colors, showcasing a product suite with beta signup functionality. The application uses TypeScript throughout and includes comprehensive UI components built with Radix UI and Tailwind CSS.
 
 # User Preferences
 
@@ -41,10 +45,19 @@ Preferred communication style: Simple, everyday language.
 - **Logging**: Request/response logging with performance metrics
 
 ## Build and Deployment
-- **Development**: Vite dev server with Express API proxy
-- **Production**: Static frontend build with Express server bundle
-- **Asset Management**: Vite handles frontend assets, Express serves static files in production
+- **Replit Deployment**: Vite dev server with Express API proxy, full-stack functionality
+- **GitHub Pages**: Static-only build using `vite.config.static.ts` and `package-static.json`
+- **GitHub Actions**: Automated deployment workflow for GitHub Pages
+- **Form Handling**: Netlify Forms integration for static deployments
+- **Asset Management**: Vite handles frontend assets, relative paths for static hosting
 - **TypeScript**: Shared type definitions between client/server in the shared directory
+
+## Recent Changes (January 2025)
+- Created static version of landing page for GitHub Pages deployment
+- Added GitHub Actions workflow for automatic deployment
+- Configured Netlify Forms for beta signup functionality on static sites
+- Removed server dependencies for static builds
+- Added comprehensive deployment documentation
 
 # External Dependencies
 
