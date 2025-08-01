@@ -40,6 +40,7 @@ export class MemStorage implements IStorage {
     const betaSignup: BetaSignup = {
       ...insertBetaSignup,
       id,
+      message: insertBetaSignup.message || null,
       createdAt: new Date(),
     };
     this.betaSignups.set(id, betaSignup);

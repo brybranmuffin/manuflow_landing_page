@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite --config vite.config.static.ts",
-    "build": "tsc --project tsconfig.static.json --noEmit && vite build --config vite.config.static.ts",
+    "build": "tsc && vite build --config vite.config.static.ts",
     "preview": "vite preview --config vite.config.static.ts"
   },
   "dependencies": {
